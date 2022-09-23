@@ -9,4 +9,5 @@ class QuoteViewModel(private val quoteRepository: QuoteRepository)
 
         fun getQuotes() = quoteRepository.getQuotes()
         fun addQuotes(quote: Quote) = quoteRepository.addQuote(quote)
+        fun deleteQuotes() = quoteRepository.deleteQuotes()
 }

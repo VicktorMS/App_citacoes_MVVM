@@ -45,9 +45,15 @@ class QuotesActivity : AppCompatActivity() {
         binding.buttonAddQuote.setOnClickListener {
             val quote = Quote(binding.editTextQuote.text.toString(),
                 binding.editTextAuthor.text.toString())
+            
+
             viewModel.addQuotes(quote)
             binding.editTextQuote.setText("")
             binding.editTextAuthor.setText("")
+        }
+
+        binding.buttonDelQuotes.setOnClickListener{
+            viewModel.deleteQuotes()
         }
     }
 }

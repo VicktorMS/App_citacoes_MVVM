@@ -60,6 +60,7 @@
         app:layout_constraintTop_toBottomOf="@+id/editText_quote"
         app:layout_constraintVertical_bias="0.0" />
 
+
     <Button
         android:id="@+id/button_add_quote"
         android:layout_width="0dp"
@@ -72,9 +73,24 @@
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="@+id/editText_author"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/editText_quote"
         app:layout_constraintTop_toTopOf="@+id/editText_quote"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
         app:layout_constraintWidth_percent="0.25" />
+
+    <Button
+        android:id="@+id/button_del_quotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="148dp"
+        android:text="Deletar"
+        android:backgroundTint="?colorAccent"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

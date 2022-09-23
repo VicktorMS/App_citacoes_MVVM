@@ -19,4 +19,10 @@ class FakeQuoteDao {
     }
     fun getQuotes() = quotes as LiveData<List<Quote>>
     //Retorna todos as citações, ou seja retorna a mutablelivedata
+
+    fun deleteQuotes(){
+        quoteList.clear()
+        quotes.value = quoteList
+    }
+
 }

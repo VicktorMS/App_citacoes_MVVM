@@ -8,6 +8,10 @@ class QuoteRepository private constructor(private val quoteDao: FakeQuoteDao) {
 
     fun getQuotes() = quoteDao.getQuotes()
 
+    fun deleteQuotes(){
+        quoteDao.deleteQuotes()
+    }
+
     companion object {
         @Volatile
         private var instance: QuoteRepository? = null
